@@ -37,4 +37,3 @@ while True:
         break
 
     print(make_album(artist_name, album))
-
