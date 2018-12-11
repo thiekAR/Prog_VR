@@ -39,3 +39,30 @@ while True:
             print(str(compt) + ": " + str(ele))
             compt += 1
         break
+
+
+# Question 3 - Classes and object
+
+
+class BankAccount:
+    balance = 0
+
+
+    def __init__(self, value_of_balance=0):
+        self.balance = value_of_balance
+
+
+    def deposit(self, add_value):
+        self.balance += add_value
+
+
+    def withdraw(self, subst_value):
+        self.balance -= subst_value
+
+
+b = BankAccount(10)
+b.deposit(25)
+b.withdraw(1)
+print("The balance of the bank account is now " + str(b.balance))
+
+
